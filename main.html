@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anсestral Spirit</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+   <header class="header">
+    <div class="header-container">
+        <div class="nav-container">
+            <div class="burger-opener">
+                <span></span>
+            </div>
+            <a href="#" target="_blank" class="cabinet-link">
+                Войти
+                <img src="assets/icons/user.png" alt="user-icon" height="20px" width="20px">
+            </a>
+        </div>
+        <div class="offer-container">
+            <h1 class="header-text">
+                Туры по <span class="header-styler">самым дальним</span> уголкам планеты для 
+                <span class="header-styler">единения с природой</span>
+            </h1>
+            <p class="offer-description">
+                Дайте волю древним инстинктам и ощущениям неизведанного.
+                Посетите места, куда тысячелетиями не ступала нога человека,
+                 которые тем самым остались в первозданном виде
+            </p>
+        </div>
+        <div class="tour">
+            <p>Выберите свой тур</p>
+            <div class="tour-selectors__form">
+                <form action="tours.html" class="tour-form" method="get">
+                    <div class="tour-selector tour-selector__country">
+                        <div class="selector">
+                            <label for="country" class="selector-label selector-label__country">Страна</label>
+                        </div>
+                        <div class="selector selector__wrapper  selector__wrapper-arrow">
+                            <select name="country" id="country" class="selector-option selector-option__country">
+                                <option value="any" class="selector-item selector-item__country">Любая</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="tour-selector tour-selector__season">
+                        <div class="selector">
+                            <label for="season" class="selector-label selector-label__season">Сезон</label>
+                        </div>
+                        <div class="selector selector__wrapper selector__wrapper-arrow">
+                            <select name="season" id="season" class="selector-option selector-option__season">
+                                <option value="any" class="selector-item selector-item__season">Любой</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="tour-selector tour-selector__date">
+                        <div class="selector">
+                            <label for="date" class="selector-label selector-label__date">Дата вылета</label>
+                        </div>
+                        <div class="selector selector__wrapper">
+                            <input type="date" name="date" id="date" value="05.05.2021" class="selector-option__date">
+                        </div>
+                    </div>
+                    <div class="tour-selector tour-selector__nights">
+                        <div class="selector">
+                            <label for="nights" class="selector-label selector-label__nights">Кол-во ночей</label>
+                        </div>
+                        <div class="input input__nights">
+                            <input type="text" name="nights" id="nights" class="selector-option__nights">
+                        </div>
+                    </div>
+                    <div class="tour-selector tour-selector__persons">
+                        <div class="selector">
+                            <label for="persons" class="selector-label selector-label__persons">Кол-во человек</label>
+                        </div>
+                        <div class="input input__persons">
+                            <input type="text" name="persons" id="persons" class="selector-option__persons">
+                        </div>
+                    </div>
+                    <input type="submit" value="Найти" class="btn btn__params-sender">
+                </form>
+            </div>
+        </div>
+    </div>
+   </header>
+</body>
+</html>
