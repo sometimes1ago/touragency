@@ -7,7 +7,7 @@
     <title>Anсestral Spirit</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.min.css">
 </head>
@@ -18,7 +18,7 @@
             <div class="burger-opener">
                 <span></span>
             </div>
-            <a href="#" target="_blank" class="cabinet-link">
+            <a href="auth.html" target="_blank" class="cabinet-link">
                 Войти
                 <img src="assets/icons/user.png" alt="user-icon" height="20px" width="20px">
             </a>
@@ -58,12 +58,14 @@
                             </select>
                         </div>
                     </div>
-                    <div class="tour-selector tour-selector__date">
+                    <div class="tour-selector tour-selector__type">
                         <div class="selector">
-                            <label for="date" class="selector-label selector-label__date">Дата вылета</label>
+                            <label for="type" class="selector-label selector-label__type">Тип тура</label>
                         </div>
-                        <div class="selector selector__wrapper">
-                            <input type="date" name="date" id="date" value="05.05.2021" class="selector-option__date">
+                        <div class="selector selector__wrapper selector__wrapper-arrow">
+                            <select name="type" id="type" class="selector-option selector-option__type">
+                                <option value="walking" class="selector-item selector-item__type">Пеший</option>
+                            </select>
                         </div>
                     </div>
                     <div class="tour-selector tour-selector__nights">
@@ -71,7 +73,7 @@
                             <label for="nights" class="selector-label selector-label__nights">Кол-во ночей</label>
                         </div>
                         <div class="input input__nights">
-                            <input type="text" name="nights" id="nights" class="selector-option__nights">
+                            <input type="text" name="nights" id="nights" value="5 ночей" class="selector-option__nights" required>
                         </div>
                     </div>
                     <div class="tour-selector tour-selector__persons">
@@ -79,7 +81,7 @@
                             <label for="persons" class="selector-label selector-label__persons">Кол-во человек</label>
                         </div>
                         <div class="input input__persons">
-                            <input type="text" name="persons" id="persons" class="selector-option__persons">
+                            <input type="text" name="persons" id="persons" value="2 человека" class="selector-option__persons" required>
                         </div>
                     </div>
                     <input type="submit" value="Найти" class="btn btn__params-sender">
