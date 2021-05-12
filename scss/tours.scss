@@ -228,6 +228,8 @@ li {
     &-list {
         display: flex;
         flex-direction: row;
+        height: 45px;
+        margin-left: 75px;
         &__item {
             margin-left: 45px;
         }
@@ -245,6 +247,24 @@ li {
         margin-left: 30px;
         &__item {
             margin-bottom: 35px;
+        }
+        &__item:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    &-data__sender {
+        padding-bottom: 50px;
+        input {
+            width: 116px;
+            height: 39px;
+            background-color: $accent;
+            border: none;
+            color: #fff;
+            font-weight: 700;
+            font-size: 16px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(251, 76, 31, 0.25);
+            margin-top: -5px;
         }
     }
 }
@@ -420,8 +440,10 @@ input[type=checkbox] {
                 padding-bottom: 0px;
             }
         }
+    
+    }
     &-tourtype {
-        .checkbox1 {
+        .checkbox {
             padding-top: 10px;
             &-item {
                 padding-bottom: 15px;
@@ -435,8 +457,10 @@ input[type=checkbox] {
                     @extend %checkbox__checked-label__after;
                 }
             }
+            &-item:last-child {
+                padding-bottom: 0px;
+            }
         }
-    }
     }
     &-label {
         display: flex;

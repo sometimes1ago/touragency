@@ -21,7 +21,7 @@
   background: url(../assets/icons/no-active-radio.png) 0 0 no-repeat;
 }
 
-.item-accomodation .checkbox-item input[type=checkbox] + label, .item-accomodation-tourtype .checkbox1-item input[type=checkbox] + label {
+.item-accomodation .checkbox-item input[type=checkbox] + label, .item-tourtype .checkbox-item input[type=checkbox] + label {
   display: inline-block;
   position: relative;
   padding-left: 25px;
@@ -32,7 +32,7 @@
   color: #202020;
 }
 
-.item-accomodation .checkbox-item input[type=checkbox] + label::before, .item-accomodation-tourtype .checkbox1-item input[type=checkbox] + label::before {
+.item-accomodation .checkbox-item input[type=checkbox] + label::before, .item-tourtype .checkbox-item input[type=checkbox] + label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -41,7 +41,7 @@
   height: 20px;
 }
 
-.item-accomodation .checkbox-item input[type=checkbox]:checked + label::after, .item-accomodation-tourtype .checkbox1-item input[type=checkbox]:checked + label::after {
+.item-accomodation .checkbox-item input[type=checkbox]:checked + label::after, .item-tourtype .checkbox-item input[type=checkbox]:checked + label::after {
   content: "";
   position: absolute;
   left: 0;
@@ -235,6 +235,8 @@ li {
 .filters-list {
   display: flex;
   flex-direction: row;
+  height: 45px;
+  margin-left: 75px;
 }
 
 .filters-list__item {
@@ -258,6 +260,27 @@ li {
 
 .filters-aside__item {
   margin-bottom: 35px;
+}
+
+.filters-aside__item:last-child {
+  margin-bottom: 0px;
+}
+
+.filters-data__sender {
+  padding-bottom: 50px;
+}
+
+.filters-data__sender input {
+  width: 116px;
+  height: 39px;
+  background-color: #ec8f36;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(251, 76, 31, 0.25);
+  margin-top: -5px;
 }
 
 input[type=range] {
@@ -430,12 +453,16 @@ input[type=checkbox] {
   padding-bottom: 0px;
 }
 
-.item-accomodation-tourtype .checkbox1 {
+.item-tourtype .checkbox {
   padding-top: 10px;
 }
 
-.item-accomodation-tourtype .checkbox1-item {
+.item-tourtype .checkbox-item {
   padding-bottom: 15px;
+}
+
+.item-tourtype .checkbox-item:last-child {
+  padding-bottom: 0px;
 }
 
 .item-label {
