@@ -64,17 +64,68 @@
                             </div>
                             <input type="text" name="max-price" id="max-price" value="240000" class="max-price price__input">
                         </div>
-                    </div>
+                    </div> 
+                </li>
+                <li class="filters-aside__item">
                     <div class="item-flight">
                         <h4 class="filters-label">Перелет</h4>
                         <ul class="flight-options">
                             <li class="flight-item">
-                                <input type="radio" name="flight_yes" checked="checked" id="flight_yes">
+                                <input type="radio" name="flight_yes" checked id="flight_yes">
 				                <label class="active" for="flight_yes">С перелетом</label>
                             </li>
                             <li class="flight-item">
                                 <input type="radio" name="flight_no" id="flight_no">
 				                <label class="no-active" for="flight_no">Без перелета</label>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="filters-aside__item">
+                    <div class="item-accomodation">
+                        <h4 class="filters-label">Категория места<br/>проживания</h4>
+                        <ul class="checkbox">
+                            <li class="checkbox-item checkbox-item__any"> 
+                                <input id="any" type="checkbox" checked name="any" value="any">
+                                <label for="any">Любая</label>
+                            </li>
+                            <li class="checkbox-item checkbox-item__fivestar">
+                                <input id="fivestar" type="checkbox" name="fivestar" value="fivestar">
+                                <label for="fivestar">
+                                    <img src="assets/icons/star-accent.png" alt="star-icon">
+                                    <img src="assets/icons/star-accent.png" alt="star-icon">
+                                    <img src="assets/icons/star-accent.png" alt="star-icon">
+                                    <img src="assets/icons/star-accent.png" alt="star-icon">
+                                    <img src="assets/icons/star-accent.png" alt="star-icon">
+                                </label>
+                            </li>
+                            <li class="checkbox-item checkbox-item__any">
+                                <input id="fourstar" type="checkbox" name="fourstar" value="fourstar">
+                                <label for="fourstar">
+                                    <img src="assets/icons/star-accent.png" alt="star-icon">
+                                    <img src="assets/icons/star-accent.png" alt="star-icon">
+                                    <img src="assets/icons/star-accent.png" alt="star-icon">
+                                    <img src="assets/icons/star-accent.png" alt="star-icon">
+                                </label>
+                            </li>
+                            <li class="checkbox-item checkbox-item__any">
+                                <input id="threestar" type="checkbox" name="threestar" value="threestar">
+                                <label for="threestar">
+                                    <img src="assets/icons/star-accent.png" alt="star-icon">
+                                    <img src="assets/icons/star-accent.png" alt="star-icon">
+                                    <img src="assets/icons/star-accent.png" alt="star-icon">
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="filters-aside__item">
+                    <div class="item-tourtype">
+                        <h4 class="filters-label">Тип тура</h4>
+                        <ul class="checkbox1">
+                            <li class="checkbox-item checkbox-item__walking">
+                                <input type="checkbox" checked value="walking" name="walking" id="walking">
+                                <label for="walking">Пеший</label>
                             </li>
                         </ul>
                     </div>

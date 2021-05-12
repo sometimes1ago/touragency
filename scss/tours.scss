@@ -26,6 +26,35 @@ $font: "Montserrat";
     background: url(../assets/icons/no-active-radio.png) 0 0 no-repeat;
 }
 
+%checkbox-label {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 0px;
+    user-select: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: $primaryText;
+}
+
+%checkbox-label__before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: url('../assets/icons/non-active-checkbox.png') 0 0 no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+%checkbox__checked-label__after {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: url('../assets/icons/active-checkbox.png') 0 0 no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
 h1,
 h2,
 h3,
@@ -126,6 +155,8 @@ li {
 
 .help {
     width: 684px;
+    height: 235px;
+    border-radius: 15px;
     background: url('../assets/pictures/page_tours/help-background.png') no-repeat;
     display: flex;
     flex-direction: row;
@@ -133,6 +164,7 @@ li {
     align-items: center;
     margin-left: 69px;
     color: #fff;
+    box-shadow: 0px 10px 25px 0px #00000026; 
     &-text {
         display: flex;
         flex-direction: column;
@@ -211,7 +243,9 @@ li {
     &-aside {
         flex-direction: column;
         margin-left: 30px;
-
+        &__item {
+            margin-bottom: 35px;
+        }
     }
 }
 
@@ -281,6 +315,10 @@ input[type=radio] {
     display: none;
 }
 
+input[type=checkbox] {
+    display: none;
+}
+
 .item {
     display: flex;
     flex-direction: column;
@@ -342,7 +380,6 @@ input[type=radio] {
         
     }
     &-flight {
-        padding-top: 35px;
         .flight-options {
             display: flex;
             flex-direction: row;
@@ -363,6 +400,43 @@ input[type=radio] {
         .flight-item:last-child {
             padding-right: 0px;
         }
+    }
+    &-accomodation {
+        .checkbox {
+            padding-top: 10px;
+            &-item {
+                padding-bottom: 15px;
+                input[type=checkbox] + label {
+                    @extend %checkbox-label;
+                }
+                input[type=checkbox] + label::before {
+                    @extend %checkbox-label__before;
+                }
+                input[type=checkbox]:checked + label::after {
+                    @extend %checkbox__checked-label__after;
+                }
+            }
+            &-item:last-child {
+                padding-bottom: 0px;
+            }
+        }
+    &-tourtype {
+        .checkbox1 {
+            padding-top: 10px;
+            &-item {
+                padding-bottom: 15px;
+                input[type=checkbox] + label {
+                    @extend %checkbox-label;
+                }
+                input[type=checkbox] + label::before {
+                    @extend %checkbox-label__before;
+                }
+                input[type=checkbox]:checked + label::after {
+                    @extend %checkbox__checked-label__after;
+                }
+            }
+        }
+    }
     }
     &-label {
         display: flex;
