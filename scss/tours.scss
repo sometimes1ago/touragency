@@ -426,6 +426,9 @@ input[type=checkbox] {
             padding-top: 10px;
             &-item {
                 padding-bottom: 15px;
+                img {
+                    padding-right: 3px
+                }
                 input[type=checkbox] + label {
                     @extend %checkbox-label;
                 }
@@ -499,4 +502,77 @@ input[type=checkbox] {
         font-family: $font;
         width: 150px;
     }
+}
+
+.tour-cards {
+    color:#fff;
+    .card {
+        width: 300px;
+        height: 500px;
+        border-radius: 15px;
+        box-shadow: 0px 5px 15px 0px #00000033;
+        background: url('../assets/pictures/page_tours/cardbg.png');
+        &-data {
+            padding: {
+                top: 214px;
+                left: 15px;
+            }
+        }
+        &-header {
+            font-size: 20px;
+            font-weight: 800;
+            line-height: 24px;
+            padding-bottom: 5px;
+        }
+        &-description {
+            width: 272px;
+            font-size: 14px;
+            font-weight: 500;
+            
+        }
+        &-list__item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-right: 15px;
+            p {
+                font-weight: 600;
+                font-size: 14px;
+                padding-left: 5px;
+            }
+        }
+        &-list__item:last-child {
+            padding-right: 15px;
+        }
+        &-category-price {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-top: 23px;
+            p {
+                font-weight: 600;
+                font-size: 16px;
+            }
+            .category {
+                display: flex;
+                flex-direction: row;
+                padding-right: 87px;
+                img {
+                    margin-right: 3px;
+                }
+            }
+        }
+        .upperrow-list {
+            display: flex;
+            flex-direction: row;
+            padding-top: 20px;
+        }
+        .bottomrow-list {
+            display: flex;
+            flex-direction: row;
+            padding-top: 15px;
+        }
+
+    }
+
 }

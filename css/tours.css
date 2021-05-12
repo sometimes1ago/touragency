@@ -449,6 +449,10 @@ input[type=checkbox] {
   padding-bottom: 15px;
 }
 
+.item-accomodation .checkbox-item img {
+  padding-right: 3px;
+}
+
 .item-accomodation .checkbox-item:last-child {
   padding-bottom: 0px;
 }
@@ -497,4 +501,85 @@ input[type=checkbox] {
   font-size: 14px;
   font-family: "Montserrat";
   width: 150px;
+}
+
+.tour-cards {
+  color: #fff;
+}
+
+.tour-cards .card {
+  width: 300px;
+  height: 500px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px 0px #00000033;
+  background: url("../assets/pictures/page_tours/cardbg.png");
+}
+
+.tour-cards .card-data {
+  padding-top: 214px;
+  padding-left: 15px;
+}
+
+.tour-cards .card-header {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24px;
+  padding-bottom: 5px;
+}
+
+.tour-cards .card-description {
+  width: 272px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.tour-cards .card-list__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 15px;
+}
+
+.tour-cards .card-list__item p {
+  font-weight: 600;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.tour-cards .card-list__item:last-child {
+  padding-right: 15px;
+}
+
+.tour-cards .card-category-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 23px;
+}
+
+.tour-cards .card-category-price p {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.tour-cards .card-category-price .category {
+  display: flex;
+  flex-direction: row;
+  padding-right: 87px;
+}
+
+.tour-cards .card-category-price .category img {
+  margin-right: 3px;
+}
+
+.tour-cards .card .upperrow-list {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+}
+
+.tour-cards .card .bottomrow-list {
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
 }
