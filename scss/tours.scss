@@ -222,6 +222,10 @@ li {
     }
 }
 
+.page-content {
+    position: relative;
+}
+
 .filters {
     display: flex;
     margin-top: 35px;
@@ -506,22 +510,33 @@ input[type=checkbox] {
 
 .tour-cards {
     color:#fff;
+    position: absolute;
+    left: 360px;
+    top: 85px;
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
     .card {
         width: 300px;
         height: 500px;
         border-radius: 15px;
         box-shadow: 0px 5px 15px 0px #00000033;
         background: url('../assets/pictures/page_tours/cardbg.png');
+        display: block;
+        text-decoration: none;
+        color: #fff;
         &-data {
             padding: {
-                top: 214px;
-                left: 15px;
+                top: 197px;
+                left: 10px;
             }
         }
         &-header {
-            font-size: 20px;
+            font-size: 24px;
             font-weight: 800;
-            line-height: 24px;
+            line-height: 29px;
             padding-bottom: 5px;
         }
         &-description {
@@ -534,7 +549,7 @@ input[type=checkbox] {
             display: flex;
             flex-direction: row;
             align-items: center;
-            padding-right: 15px;
+            padding-right: 10px;
             p {
                 font-weight: 600;
                 font-size: 14px;
@@ -542,7 +557,7 @@ input[type=checkbox] {
             }
         }
         &-list__item:last-child {
-            padding-right: 15px;
+            padding-right: 9px;
         }
         &-category-price {
             display: flex;
@@ -556,7 +571,7 @@ input[type=checkbox] {
             .category {
                 display: flex;
                 flex-direction: row;
-                padding-right: 87px;
+                padding-right: 98px;
                 img {
                     margin-right: 3px;
                 }
@@ -573,6 +588,10 @@ input[type=checkbox] {
             padding-top: 15px;
         }
 
+    }
+    &-card:visited {
+        text-decoration: none;
+        color: #fff;
     }
 
 }

@@ -227,6 +227,10 @@ li {
   border: none;
 }
 
+.page-content {
+  position: relative;
+}
+
 .filters {
   display: flex;
   margin-top: 35px;
@@ -505,6 +509,14 @@ input[type=checkbox] {
 
 .tour-cards {
   color: #fff;
+  position: absolute;
+  left: 360px;
+  top: 85px;
+  width: 960px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .tour-cards .card {
@@ -513,17 +525,20 @@ input[type=checkbox] {
   border-radius: 15px;
   box-shadow: 0px 5px 15px 0px #00000033;
   background: url("../assets/pictures/page_tours/cardbg.png");
+  display: block;
+  text-decoration: none;
+  color: #fff;
 }
 
 .tour-cards .card-data {
-  padding-top: 214px;
-  padding-left: 15px;
+  padding-top: 197px;
+  padding-left: 10px;
 }
 
 .tour-cards .card-header {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 800;
-  line-height: 24px;
+  line-height: 29px;
   padding-bottom: 5px;
 }
 
@@ -537,7 +552,7 @@ input[type=checkbox] {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-right: 15px;
+  padding-right: 10px;
 }
 
 .tour-cards .card-list__item p {
@@ -547,7 +562,7 @@ input[type=checkbox] {
 }
 
 .tour-cards .card-list__item:last-child {
-  padding-right: 15px;
+  padding-right: 9px;
 }
 
 .tour-cards .card-category-price {
@@ -565,7 +580,7 @@ input[type=checkbox] {
 .tour-cards .card-category-price .category {
   display: flex;
   flex-direction: row;
-  padding-right: 87px;
+  padding-right: 98px;
 }
 
 .tour-cards .card-category-price .category img {
@@ -582,4 +597,9 @@ input[type=checkbox] {
   display: flex;
   flex-direction: row;
   padding-top: 15px;
+}
+
+.tour-cards-card:visited {
+  text-decoration: none;
+  color: #fff;
 }
