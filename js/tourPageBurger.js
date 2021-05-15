@@ -1,4 +1,3 @@
-
 function openAndAnimate() {
     let mainPageBurgerOpener = document.querySelector('.burger-opener');
     mainPageBurgerOpener.addEventListener('click', ()=>{
@@ -9,7 +8,7 @@ function openAndAnimate() {
         let thridItem = document.querySelector('.thrid-item').classList.toggle('animated-item__thrid');
         let fourthItem = document.querySelector('.fourth-item').classList.toggle('animated-item__fourth');
         let fifthItem = document.querySelector('.fifth-item').classList.toggle('animated-item__fifth');
-        let tour = document.querySelector('.tour').classList.toggle('hided');
+        let hided = document.querySelector('.page-content').classList.toggle('hided');
     });
 }
 

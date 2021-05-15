@@ -12,15 +12,49 @@
     <title>Ancestral Spirit - Туры</title>
 </head>
 <body>
-    <nav class="nav">
-        <div class="nav-burger">
+    <div class="nav-container">
+        <div class="burger-opener">
             <span></span>
         </div>
-        <a href="auth.html" target="_blank" class="nav-link">
+        <nav class="burger">
+            <ul class="burger-links__list">
+                <li class="burger-list__item first-item">
+                    <a href="main.html" class="burger-link">
+                        <h2 class="burger-link__header">главная</h2>
+                    <p class="burger-link__description">стартовая страница нашего агенства</p>
+                    </a>
+                </li>
+                <li class="burger-list__item second-item">
+                    <a href="tours.html" class="burger-link">
+                        <h2 class="burger-link__header">туры</h2>
+                    <p class="burger-link__description">страница, содержащая наши самые лучшие туры</p>
+                    </a>
+                </li>
+                <li class="burger-list__item thrid-item">
+                    <a href="auth.html" class="burger-link">
+                        <h2 class="burger-link__header">личный кабинет</h2>
+                    <p class="burger-link__description">ваше персональное пространство в нашем мире путешествий</p>
+                    </a>
+                </li>
+                <li class="burger-list__item fourth-item">
+                    <a href="#" class="burger-link">
+                        <h2 class="burger-link__header">помощь</h2>
+                    <p class="burger-link__description">ответы на самые часто задаваемые вопросы</p>
+                    </a>
+                </li>
+                <li class="burger-list__item fifth-item">
+                    <a href="#" class="burger-link">
+                        <h2 class="burger-link__header">о нас</h2>
+                    <p class="burger-link__description">расскажем кто мы и чем занимаемся не одно десятилетие</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <a href="auth.html" target="_blank" class="cabinet-link">
             Войти
             <img src="assets/icons/user-dark.png" alt="user-icon" height="20px" width="20px">
         </a>
-    </nav>
+    </div>
     <header class="header-and-help">
         <div class="header">
             <h2 class="header-page">
@@ -238,5 +272,6 @@
             </a>
         </div>
     </main>
+    <script src="js/tourPageBurger.js"></script>
 </body>
 </html>

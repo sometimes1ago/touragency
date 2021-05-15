@@ -63,17 +63,19 @@ li {
   font-family: "Montserrat";
 }
 
-.nav {
+.nav-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
   padding-bottom: 35px;
-  z-index: 1;
+  position: relative;
+  width: 100%;
 }
 
-.nav-burger {
+/* Burger menu opener */
+.burger-opener {
   position: relative;
   width: 30px;
   height: 8px;
@@ -82,26 +84,117 @@ li {
   z-index: 1;
 }
 
-.nav-burger span, .nav-burger::after, .nav-burger::before {
+.burger-opener span,
+.burger-opener::before {
   height: 2px;
   width: 100%;
   position: absolute;
-  background: #303030;
+  background: #202020;
   margin: 0 auto;
   z-index: 1;
+  transition: all 0.3s ease-out;
 }
 
-.nav-burger::after {
+.burger-opener::before {
+  content: "";
   top: 7px;
   z-index: 1;
 }
 
-.nav-burger::before, .nav-burger::after {
-  content: "";
-  z-index: 1;
+.burger {
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: none;
 }
 
-.nav-link {
+.burger-links__list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 360px;
+  margin-top: 89px;
+}
+
+.burger-list__item {
+  padding-top: 35px;
+}
+
+.burger-list__item:first-child {
+  padding-top: 0px;
+}
+
+.burger-link {
+  text-decoration: none;
+}
+
+.burger-link__header {
+  font-size: 36px;
+  font-weight: 600;
+  color: #202020;
+  padding-bottom: 5px;
+}
+
+.burger-link__description {
+  font-size: 16px;
+  font-weight: 400;
+  color: #6a6a6a;
+}
+
+.active {
+  display: block;
+}
+
+.burger-active::before, .burger-active span {
+  background: #303030;
+}
+
+.burger-active::before {
+  transform: rotate(45deg);
+  top: 0px;
+}
+
+.burger-active span {
+  transform: rotate(-45deg);
+}
+
+.hided {
+  display: none;
+}
+
+.animated-item__first {
+  animation: main-link__animation 0.30s ease-in-out 0.30s 1 normal forwards;
+  opacity: 0;
+  transform: translate(0, 25px);
+}
+
+.animated-item__second {
+  animation: tours-link__animation 0.30s ease-out 0.60s 1 normal forwards;
+  opacity: 0;
+  transform: translate(0, 25px);
+}
+
+.animated-item__thrid {
+  animation: cabinet-link__animation 0.30s ease-out 0.90s 1 normal forwards;
+  opacity: 0;
+  transform: translate(0, 25px);
+}
+
+.animated-item__fourth {
+  animation: help-link__animation 0.30s ease-out 1.20s 1 normal forwards;
+  opacity: 0;
+  transform: translate(0, 25px);
+}
+
+.animated-item__fifth {
+  animation: about-link__animation 0.30s ease-out 1.50s 1 normal forwards;
+  opacity: 0;
+  transform: translate(0, 25px);
+}
+
+.cabinet-link {
   display: flex;
   flex-direction: row;
   text-decoration: none;
@@ -109,15 +202,14 @@ li {
   font-size: 14px;
   margin-right: 30px;
   color: #202020;
-  z-index: 1;
 }
 
-.nav-link:visited {
+.cabinet-link:visited {
   text-decoration: none;
   color: #202020;
 }
 
-.nav-link img {
+.cabinet-link img {
   margin-left: 10px;
 }
 
@@ -602,4 +694,59 @@ input[type=checkbox] {
 .tour-cards-card:visited {
   text-decoration: none;
   color: #fff;
+}
+
+@keyframes main-link__animation {
+  from {
+    opacity: 0;
+    transform: translate(0, 25px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes tours-link__animation {
+  from {
+    opacity: 0;
+    transform: translate(0, 25px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes cabinet-link__animation {
+  from {
+    opacity: 0;
+    transform: translate(0, 25px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes help-link__animation {
+  from {
+    opacity: 0;
+    transform: translate(0, 25px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes about-link__animation {
+  from {
+    opacity: 0;
+    transform: translate(0, 25px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
